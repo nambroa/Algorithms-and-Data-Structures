@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.recursion_dp_backtracking.H_generate_parenthesis.algorithm import generate_parenthesis
+from recursion_dp_backtracking.H_generate_parenthesis.algorithm import generate_parenthesis
 
 
 class GenerateParenthesisTest(TestCase):

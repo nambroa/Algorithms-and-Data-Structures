@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.E_one_away.algorithm import one_away
+from strings.E_one_away.algorithm import one_away
 
 
 class OneAwayTest(TestCase):

@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.arrays.C_max_sum_contiguous_subarray.algorithm import maximum_contiguous_subarray
+from arrays.C_max_sum_contiguous_subarray.algorithm import maximum_contiguous_subarray
 
 
 class MaximumContiguousSubarrayTest(TestCase):

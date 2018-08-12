@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.P_roman_to_integer.algorithm import convert_roman_to_integer
+from strings.P_roman_to_integer.algorithm import convert_roman_to_integer
 
 
 class RomanToIntegerTest(TestCase):

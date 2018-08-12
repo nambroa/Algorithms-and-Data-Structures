@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from exercises.linked_lists.B_kth_to_last.algorithm import get_kth_to_last_element_from
-from exercises.linked_lists.single_linked_list import SingleLinkedList
+from linked_lists.B_kth_to_last.algorithm import get_kth_to_last_element_from
+from linked_lists.single_linked_list import SingleLinkedList
 
 
 class GetKthToLastElementTest(TestCase):

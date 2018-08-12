@@ -1,5 +1,5 @@
 from unittest import TestCase
-from exercises.arrays.B_add_one_to_number.algorithm import clean_zeroes_of_number, \
+from arrays.B_add_one_to_number.algorithm import clean_zeroes_of_number, \
     add_one_to_number
 
 

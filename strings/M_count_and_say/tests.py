@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.M_count_and_say.algorithm import count_and_say
+from strings.M_count_and_say.algorithm import count_and_say
 
 
 class CountAndSayTest(TestCase):

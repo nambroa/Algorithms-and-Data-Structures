@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.recursion_dp_backtracking.E_recursive_multiply.algorithm import iterative_multiply, recursive_multiply
+from recursion_dp_backtracking.E_recursive_multiply.algorithm import iterative_multiply, recursive_multiply
 
 
 class IterativeMultiplyTest(TestCase):

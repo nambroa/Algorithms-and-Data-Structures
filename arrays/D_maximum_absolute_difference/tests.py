@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.arrays.D_maximum_absolute_difference.algorithm import maximum_absolute_difference
+from arrays.D_maximum_absolute_difference.algorithm import maximum_absolute_difference
 
 
 class MaximumAbsoluteDifferenceTest(TestCase):

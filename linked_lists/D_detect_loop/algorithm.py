@@ -18,7 +18,7 @@ QUESTIONS:
 + Will the list always contain a repeat? Yes
 
 """
-from exercises.linked_lists.single_linked_list import SingleLinkedNode, SingleLinkedList
+from linked_lists.single_linked_list import SingleLinkedNode, SingleLinkedList
 
 
 def detect_loop_in(linked_list):

@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.J_super_reduced_string.algorithm import get_super_reduced_form_of
+from strings.J_super_reduced_string.algorithm import get_super_reduced_form_of
 
 
 class SuperReducedString(TestCase):

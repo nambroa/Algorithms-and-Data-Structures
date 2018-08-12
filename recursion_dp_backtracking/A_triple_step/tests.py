@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.recursion_dp_backtracking.A_triple_step.algorithm import amount_of_ways_to_run_up_the_stairs
+from recursion_dp_backtracking.A_triple_step.algorithm import amount_of_ways_to_run_up_the_stairs
 
 
 class TripleStepTest(TestCase):

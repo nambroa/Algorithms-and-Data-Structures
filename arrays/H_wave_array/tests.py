@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.arrays.H_wave_array.algorithm import create_wave_list_from
+from arrays.H_wave_array.algorithm import create_wave_list_from
 
 
 class WaveArrayTest(TestCase):

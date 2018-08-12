@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.G_string_rotation.algorithm import is_rotation
+from strings.G_string_rotation.algorithm import is_rotation
 
 
 class StringRotationTest(TestCase):

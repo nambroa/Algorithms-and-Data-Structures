@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.arrays.E_repeat_and_missing_number.algorithm import \
+from arrays.E_repeat_and_missing_number.algorithm import \
     get_repeated_and_missing_number
 
 

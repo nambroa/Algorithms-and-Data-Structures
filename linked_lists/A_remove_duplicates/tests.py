@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from exercises.linked_lists.A_remove_duplicates.algorithm import remove_duplicates_from
-from exercises.linked_lists.single_linked_list import SingleLinkedList
+from linked_lists.A_remove_duplicates.algorithm import remove_duplicates_from
+from linked_lists.single_linked_list import SingleLinkedList
 
 
 class RemoveDuplicatesTest(TestCase):

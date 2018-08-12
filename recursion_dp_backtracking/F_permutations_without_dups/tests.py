@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.recursion_dp_backtracking.F_permutations_without_dups.algorithm import get_all_permutations_of
+from recursion_dp_backtracking.F_permutations_without_dups.algorithm import get_all_permutations_of
 
 
 class PermutationsWithoutDupsTest(TestCase):

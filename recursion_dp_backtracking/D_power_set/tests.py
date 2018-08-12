@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.recursion_dp_backtracking.D_power_set.algorithm import get_all_subsets_of
+from recursion_dp_backtracking.D_power_set.algorithm import get_all_subsets_of
 
 
 class PowerSetTest(TestCase):

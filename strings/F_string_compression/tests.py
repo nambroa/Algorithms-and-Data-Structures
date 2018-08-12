@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.F_string_compression.algorithm import compress_string
+from strings.F_string_compression.algorithm import compress_string
 
 
 class StringCompressionTest(TestCase):

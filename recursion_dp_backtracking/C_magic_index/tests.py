@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.recursion_dp_backtracking.C_magic_index.algorithm import find_magic_index_in, \
+from recursion_dp_backtracking.C_magic_index.algorithm import find_magic_index_in, \
     find_follow_up_magic_index_in
 
 

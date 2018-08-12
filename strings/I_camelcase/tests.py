@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.I_camelcase.algorithm import amount_of_words_in_camelcase
+from strings.I_camelcase.algorithm import amount_of_words_in_camelcase
 
 
 class NumberOfWordsTest(TestCase):

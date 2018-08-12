@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.N_length_of_last_word.algorithm import get_length_of_last_word
+from strings.N_length_of_last_word.algorithm import get_length_of_last_word
 
 # NOTE: Unittests should only test one case at a time. I aggregate them here just for comfort.
 

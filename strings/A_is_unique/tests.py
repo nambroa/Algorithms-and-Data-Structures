@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.A_is_unique.algorithm import check_if_word_has_all_unique_characters
+from strings.A_is_unique.algorithm import check_if_word_has_all_unique_characters
 
 
 class IsUniqueTest(TestCase):

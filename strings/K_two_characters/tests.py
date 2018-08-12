@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.K_two_characters.algorithm import two_characters
+from strings.K_two_characters.algorithm import two_characters
 
 
 class TwoCharactersTest(TestCase):

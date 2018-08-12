@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.H_caesar_cipher.algorithm import get_caesar_cipher_of
+from strings.H_caesar_cipher.algorithm import get_caesar_cipher_of
 
 
 class CaesarCipherTest(TestCase):

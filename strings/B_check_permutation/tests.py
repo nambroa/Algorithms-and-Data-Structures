@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.B_check_permutation.algorithm import check_permutation_between
+from strings.B_check_permutation.algorithm import check_permutation_between
 
 
 class CheckPermutationTest(TestCase):

@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.arrays.F_max_non_negative_subarray.algorithm import maximum_non_negative_subarray
+from arrays.F_max_non_negative_subarray.algorithm import maximum_non_negative_subarray
 
 
 class MaximumNonNegativeSubarrayTest(TestCase):

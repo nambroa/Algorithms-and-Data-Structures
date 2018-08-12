@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.recursion_dp_backtracking.G_permutations_with_dups.algorithm import get_all_non_repeated_permutations_of, \
+from recursion_dp_backtracking.G_permutations_with_dups.algorithm import get_all_non_repeated_permutations_of, \
     better_get_all_non_repeated_permutations_of
 
 

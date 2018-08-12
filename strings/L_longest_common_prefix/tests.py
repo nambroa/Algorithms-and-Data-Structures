@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from exercises.strings.L_longest_common_prefix.algorithm import find_longest_common_prefix_between
+from strings.L_longest_common_prefix.algorithm import find_longest_common_prefix_between
 
 
 class LongestCommonPrefixTest(TestCase):
