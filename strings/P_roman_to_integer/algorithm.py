@@ -66,14 +66,19 @@ def convert_roman_to_integer(roman):
     i = 0
     while i < len(roman):
         current_roman = roman[i]
-        next_roman = roman[i+1]
-        try:
-            integer_conversion += conversion_table[current_roman+next_roman]
-            # There was a match of two romans (i.e IV, IX), so I have to advance in the string by two.
-            i += 2
-        except KeyError:
+        # If we arrived at the last roman, it means we cannot check by pairs, so we only add the last one.
+        if i == len(roman) - 1:
             integer_conversion += conversion_table[current_roman]
             i += 1
+        else:
+            next_roman = roman[i+1]
+            try:
+                integer_conversion += conversion_table[current_roman+next_roman]
+                # There was a match of two romans (i.e IV, IX), so I have to advance in the string by two.
+                i += 2
+            except KeyError:
+                integer_conversion += conversion_table[current_roman]
+                i += 1
     return integer_conversion
 
 

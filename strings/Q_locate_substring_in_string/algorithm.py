@@ -13,3 +13,4 @@ What if both haystack and needle are empty?
 For the purpose of this problem, assume that the return value should be -1 in both cases.
 
 """
+
