@@ -35,9 +35,7 @@ than the length of the digits (in order to stop). Also, each counter needs to be
 For example the counter for part B must always be smaller than the counter for part C.
 
 For part A, we know we have to possibilities. digits[0..1] and digits[0..2], so the counter for part A should never
-be higher than 2.
-For part B, we know that it should begin right after part A ends. So digits[2..3], digits[2..4], digits[3..5] and
-digits[3..6] are valid options. It can never be higher than the counter for part C though.
+be higher than 3.
 You can apply the same logic to all the counters to get their boundaries.
 
 """
@@ -77,4 +75,9 @@ def restore_ip_addresses_from(digits):
             j += 1
         i += 1
     return ip_addresses
+
+
+def restoreip(digits):
+    i = 1
+    while i <= 3
 
