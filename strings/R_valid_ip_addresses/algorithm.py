@@ -30,7 +30,7 @@ We know that the IP has 4 parts.
 The A part always starts from the beginning, and part B always follows part A. Part C follows B, and so on.
 Since parts are dependant from each other, we need to form each part in unison. We can't just get all the parts A
 , then all the parts B, etc.
-We will use a counter for each part (i,j,k,l). We will have as a restriction that each counter needs to be smaller
+We will use a counter for each part (i,j,k). We will have as a restriction that each counter needs to be smaller
 than the length of the digits (in order to stop). Also, each counter needs to be smaller than the one that follows it.
 For example the counter for part B must always be smaller than the counter for part C.
 
@@ -75,9 +75,3 @@ def restore_ip_addresses_from(digits):
             j += 1
         i += 1
     return ip_addresses
-
-
-def restoreip(digits):
-    i = 1
-    while i <= 3
-
