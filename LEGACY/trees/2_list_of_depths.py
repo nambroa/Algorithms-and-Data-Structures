@@ -24,6 +24,7 @@ First solution.
 
 """
 
+
 def list_of_depths(root):
     if not root: raise ValidationError("No root node detected")
     return get_list_of_depths(root, 0, [])
