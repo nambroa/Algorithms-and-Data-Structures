@@ -22,7 +22,7 @@ class Solution:
             if num != 0:
                 return False
 
-    def moveZeroes(self, nums):
+    def move_zeroes(self, nums):
         """
         :type nums: List[int]
         :rtype: void Do not return anything, modify nums in-place instead.
