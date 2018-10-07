@@ -36,25 +36,27 @@
 # A peak of 6
 # A valley of 4
 # The idea is to always consider every peak immediately following a valley to maximize the profit.
+# So, we are going to first search for a valley. Then, we search for its immediate next peak.
+# That difference is going to be part of our maximum profits.
 # In this case, we need to consider buying in the valleys of 1 and 1 and 3 to sell in their consecutive peaks.
 # Total time complexity: O(n)
 
 class Solution:
-    def get_minimum_valley(self, prices, i):
+    def get_next_valley(self, prices, i):
         while i < (len(prices) - 1) and (prices[i] >= prices[i+1]):
             i += 1
         valley = prices[i]
         return valley, i
 
-    def get_maximum_peak(self, prices, i):
+    def get_next_peak(self, prices, i):
         while i < (len(prices) - 1) and prices[i] <= prices[i+1]:
             i += 1
         peak = prices[i]
         return peak, i
 
     def get_maximum_peak_and_valley_profit_margin(self, prices, i):
-        valley, i = self.get_minimum_valley(prices, i)
-        peak, i = self.get_maximum_peak(prices, i)
+        valley, i = self.get_next_valley(prices, i)
+        peak, i = self.get_next_peak(prices, i)
         return peak-valley, i
 
     def cannot_make_profit_with(self, prices):
