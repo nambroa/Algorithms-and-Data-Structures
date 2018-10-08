@@ -13,7 +13,7 @@
 
 
 class Solution:
-    def make_apparitions_hashmap_of(self, s):
+    def make_appearances_hashmap_of(self, s):
         hashmap = {}
         for char in s:
             try:
@@ -33,13 +33,13 @@ class Solution:
         if s is None or t is None or len(s) != len(t):
             return False
         # We make a hashmap out of the letters in s.
-        apparitions_hashmap = self.make_apparitions_hashmap_of(s)
+        appearances_hashmap = self.make_appearances_hashmap_of(s)
         # We iterate over the hashmap, removing entries that match with chars of t.
         # At the end, the hashmap must be empty. There must be no Key Errors as well.
         for char in t:
             try:
-                apparitions_hashmap[char] -= 1
-                if apparitions_hashmap[char] < 0:
+                appearances_hashmap[char] -= 1
+                if appearances_hashmap[char] < 0:
                     return False
             except KeyError:
                 return False
