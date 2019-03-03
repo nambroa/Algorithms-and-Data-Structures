@@ -30,31 +30,31 @@ A : For the purpose of this question, NO. Even if the input has zeroes before th
 
 
 def clean_zeroes_of_number(number):
-    for index in range(len(number)):
-        if number[index] != 0:
-            # I should cut the array here.
-            number = number[index:len(number)]
-            break
-    return number
+    for index, digit in enumerate(number):
+        if digit != 0:
+            return number[index:]
+    return number  # If all digits are zeroes
+
+
+def check_if_number_is_none(number):
+    if number is None:
+        raise ValueError("Number is None.")
+
+
+def check_if_number_is_empty(number):
+    if len(number) is None:
+        raise ValueError("Number is empty.")
 
 
 def add_one_to_number(number):
-    if number is None or not number or len(number) == 0:
-        raise ValueError("Invalid input: number is None or otherwise invalid.")
-    has_been_added = False
-    number = clean_zeroes_of_number(number=number)
-    for index in reversed(range(len(number))):
-        # Iterating over the number array in opposite order.
-        digit = number[index]
+    check_if_number_is_none(number)
+    check_if_number_is_empty(number)
+    new_number = clean_zeroes_of_number(number)
+    current_index = len(new_number) - 1
+    for digit in new_number[::-1]:
         if digit != 9:
-            number[index] += 1
-            has_been_added = True
-            break
+            return new_number[:current_index] + [digit+1] + new_number[current_index+1:]
         else:
-            number[index] = 0
-    if has_been_added:
-        return number
-    else:
-        # All digits of the number are 9
-        return [1] + number
-
+            new_number[current_index] = 0
+        current_index -= 1
+    return [1] + new_number
