@@ -33,11 +33,13 @@ def _check_if_the_first_row_and_column_have_zeroes(matrix):
     for i in range(len(matrix[0])):
         if matrix[0][i] == 0:
             first_row_has_zeroes = True
+            break
 
     # Check if first column has zeroes
     for i in range(len(matrix)):
         if matrix[i][0] == 0:
             first_col_has_zeroes = True
+            break
     return first_col_has_zeroes, first_row_has_zeroes
 
 
