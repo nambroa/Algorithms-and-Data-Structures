@@ -13,7 +13,7 @@ The main idea of the algorithm is to note that each row of the original matrix w
 rotated matrix in a similar manner. This is the core principle:
 
 + The first row of the rotated matrix will be the first row the original one, but with the elements filled
- in opposite orderFirst row of source –> First column of destination, elements filled in opposite order.
+ in opposite order.
 
 And this repeats for each row.
 
