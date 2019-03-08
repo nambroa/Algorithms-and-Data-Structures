@@ -13,7 +13,10 @@ QUESTIONS YOU SHOULD ASK:
 
 # Length of stairs = n
 # I assume stairs start at 0, so I want the amount of ways a child can run up to the (n+1)th stair.
+# This assumes that you can climb a stair of 0 steps in one unique way.
 # Fibonacci called, and he demands royalties.
+# This solution uses memoization in order to avoid repeated calculations
+# (basically needing to calculate memo(i) over and over for different steps)
 
 def amount_of_ways_to_run_up_the_stairs(length_of_stairs):
     memo = [0 for i in range(length_of_stairs+1)]
@@ -23,3 +26,4 @@ def amount_of_ways_to_run_up_the_stairs(length_of_stairs):
     for i in range(3, length_of_stairs+1):
         memo[i] = memo[i-1] + memo[i-2] + memo[i-3]
     return memo[length_of_stairs]
+
