@@ -6,7 +6,7 @@ from recursion_dp_backtracking.C_magic_index.algorithm import find_magic_index_i
 
 class MagicIndexTest(TestCase):
     def test_magic_index_for_array_is_2(self):
-        array = [-11, 1, 2, 5, 6, 7]
+        array = [-11, -3, 2, 5, 6, 7]
         self.assertEquals(find_magic_index_in(array), 2)
 
     def test_magic_index_for_array_is_1(self):
@@ -18,7 +18,7 @@ class MagicIndexTest(TestCase):
         self.assertEquals(find_magic_index_in(array), 4)
 
     def test_magic_index_for_array_returns_none(self):
-        array =[-4, -2, -1, 0, 9]
+        array = [-4, -2, -1, 0, 9]
         self.assertIsNone(find_magic_index_in(array))
 
     def test_magic_index_for_empty_array_raises_value_error(self):
@@ -40,8 +40,12 @@ class FollowUpMagicIndexTest(TestCase):
         self.assertEquals(find_follow_up_magic_index_in(array), 4)
 
     def test_magic_index_for_array_returns_none(self):
-        array =[-4, -2, -1, 0, 9]
+        array = [-4, -2, -1, 0, 9]
         self.assertIsNone(find_follow_up_magic_index_in(array))
+
+    def test_magic_index_for_array_is_7(self):
+        array = [7, 7, 7, 7, 7, 7, 7, 7]
+        self.assertEquals(find_follow_up_magic_index_in(array), 7)
 
     def test_magic_index_for_empty_array_raises_value_error(self):
         array = []

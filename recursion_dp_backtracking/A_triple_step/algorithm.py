@@ -8,6 +8,18 @@ QUESTIONS YOU SHOULD ASK:
 + Will the input always be a number (aka valid)?
 + Will the input always be positive? (Yes)
 
+So the strategy to use DP is usually like this:
+
+    Ask yourself: what's the smallest subproblem? How do I solve it/what's the solution to it? Your problem size
+    is likely parameterized by a quantity N, so smallest problem is almost always a problem of size 0 or 1.
+
+    Next, given a problem of size N, assume you have solution to problem of size N - 1
+    (could be N-2,N/2,etc). How would you make use of that information to compute solution to the problem of size N?
+    You usually need to ask yourself something like:
+
+    Either-or: Either this point is in the optimal set, or it's not.
+    Either this interval is in the scheduled set, or not.
+    In both cases, which one gives me more value (if you're maximizing)
 """
 
 

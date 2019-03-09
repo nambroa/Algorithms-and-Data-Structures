@@ -42,8 +42,11 @@ def get_all_permutations_of(string):
     if permutations == '':
         return [first_char]
     for permutation in permutations:
-        # I want to add the char in each possible space
-        for i in range(len(permutation) + 1):
-            new_permutation = permutation[:i] + first_char + permutation[i:]
-            new_permutations.append(new_permutation)
+        add_char_to_each_possible_space(first_char, new_permutations, permutation)
     return new_permutations
+
+
+def add_char_to_each_possible_space(first_char, new_permutations, permutation):
+    for i in range(len(permutation) + 1):
+        new_permutation = permutation[:i] + first_char + permutation[i:]
+        new_permutations.append(new_permutation)
