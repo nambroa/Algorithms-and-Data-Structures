@@ -14,7 +14,7 @@ def generate_parenthesis(n):
     if n == 0: return []
     if n < 0: raise ValueError("Amount of pairs of parenthesis is negative.")
     result = []
-    _generate_parenthesis_recursive(result, "(", n-1, n)
+    _generate_parenthesis_recursive(result, "(", n - 1, n)
     return result
 
 
@@ -26,4 +26,5 @@ def _generate_parenthesis_recursive(result, current, left, right):
         _generate_parenthesis_recursive(result, current + "(", left - 1, right)
     if left < right:
         # Then add the right ones.
+        # We need left < right in order to create a valid parentheses, otherwise we risk something like "((()".
         _generate_parenthesis_recursive(result, current + ")", left, right - 1)
