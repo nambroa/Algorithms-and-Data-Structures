@@ -59,4 +59,3 @@ def count_and_say(n):
             new_iteration = new_iteration + str(amount_of_times) + current_char
             previous_iteration = new_iteration
         return previous_iteration
-

@@ -2,6 +2,7 @@ from unittest import TestCase
 
 from strings.N_length_of_last_word.algorithm import get_length_of_last_word
 
+
 # NOTE: Unittests should only test one case at a time. I aggregate them here just for comfort.
 
 
@@ -14,4 +15,3 @@ class LengthOfLastWordTest(TestCase):
         self.assertEqual(get_length_of_last_word("hola como estas queeeeee    "), 8)
         self.assertEqual(get_length_of_last_word("hola"), 4)
         self.assertEqual(get_length_of_last_word("opk oer"), 3)
-

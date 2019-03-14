@@ -31,4 +31,3 @@ class RomanToIntegerTest(TestCase):
 
     def test_converting_ninety_in_roman_to_integer(self):
         self.assertEqual(convert_roman_to_integer('XC'), 90)
-

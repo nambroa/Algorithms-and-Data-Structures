@@ -34,9 +34,9 @@ def get_super_reduced_form_of(string):
     super_reduced_string = ''
     if string[0] != string[1]:
         super_reduced_string += string[0]
-    for i in range(len(string)-2):
-        if string[i] != string[i+1] != string[i+2]:
-            super_reduced_string += string[i+1]
+    for i in range(len(string) - 2):
+        if string[i] != string[i + 1] != string[i + 2]:
+            super_reduced_string += string[i + 1]
     if string[-1] != string[-2]:
         super_reduced_string += string[-1]
     if len(super_reduced_string) == 0:

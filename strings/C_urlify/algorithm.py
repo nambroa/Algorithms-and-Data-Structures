@@ -22,4 +22,3 @@ def is_space(letter):
 def urlify(string1):
     # Function is so simple I don't think I need tests for now. Will add them later when I have the extra time!
     return string1.replace(' ', '%20')
-

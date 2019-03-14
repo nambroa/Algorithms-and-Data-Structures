@@ -50,7 +50,7 @@ def longest_palindromic_substring(string):
     # We iterate to find the largest palindromic substring, expanding around 2n-1 centers.
     for i in range(n):
         start_1, end_1, len_1 = find_palindrome_length_expanding_around_center(string=string, start=i, end=i)
-        start_2, end_2, len_2 = find_palindrome_length_expanding_around_center(string=string, start=i, end=i+1)
+        start_2, end_2, len_2 = find_palindrome_length_expanding_around_center(string=string, start=i, end=i + 1)
         start_end_indexes_map = {len_2: [start_2, end_2], len_1: [start_1, end_1]}
         max_len = max(len_1, len_2)
         if max_len > current_len:
@@ -58,7 +58,7 @@ def longest_palindromic_substring(string):
             end = start_end_indexes_map[max_len][1]
             current_len = end - start
     if start == 0 and end == 0: return -1  # Case when no palindrome was found
-    return string[start+1:end]
+    return string[start + 1:end]
 
 
 def find_palindrome_length_expanding_around_center(string, start, end):
@@ -69,4 +69,4 @@ def find_palindrome_length_expanding_around_center(string, start, end):
     while start_index >= 0 and end_index < len(string) and string[start_index] == string[end_index]:
         start_index -= 1
         end_index += 1
-    return start_index, end_index, end_index-start_index-1
+    return start_index, end_index, end_index - start_index - 1

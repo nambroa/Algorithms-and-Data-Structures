@@ -20,7 +20,6 @@ QUESTIONS:
 
 """
 
-
 """
 
 The roman numerals to use are listed below:
@@ -50,7 +49,6 @@ If there is no match, I calculate the value of roman[i] and move by 1.
 
 """
 
-
 conversion_table = {'I': 1, 'V': 5, 'IV': 4, 'IX': 9, 'X': 10, 'XL': 40, 'L': 50, 'XC': 90, 'C': 100,
                     'CD': 400, 'D': 500, 'CM': 900, 'M': 1000}
 
@@ -71,15 +69,12 @@ def convert_roman_to_integer(roman):
             integer_conversion += conversion_table[current_roman]
             i += 1
         else:
-            next_roman = roman[i+1]
+            next_roman = roman[i + 1]
             try:
-                integer_conversion += conversion_table[current_roman+next_roman]
+                integer_conversion += conversion_table[current_roman + next_roman]
                 # There was a match of two romans (i.e IV, IX), so I have to advance in the string by two.
                 i += 2
             except KeyError:
                 integer_conversion += conversion_table[current_roman]
                 i += 1
     return integer_conversion
-
-
-

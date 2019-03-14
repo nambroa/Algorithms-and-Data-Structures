@@ -17,7 +17,6 @@ QUESTIONS:
 
 """
 
-
 """
 
 The idea is to iterate over the string. We store the previous iterated letter and the amount of times we saw it

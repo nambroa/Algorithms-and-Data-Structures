@@ -18,7 +18,6 @@ QUESTIONS:
 
 """
 
-
 """
 
 At first, you should check if s1 and s2 differ in length. If they do, they will never be a rotation of each other.
@@ -44,4 +43,3 @@ def is_rotation(string1, string2):
     if is_substring(string1, string2):
         return True
     return False
-

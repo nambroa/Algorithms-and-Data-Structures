@@ -31,7 +31,6 @@ def reverse(string):
 # In order to preserve spaces, use strip() instead of split()
 
 
-
 """
 
 Just for comparison: a non Pythonic solution. I mean just look at this.

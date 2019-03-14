@@ -40,5 +40,3 @@ def check_permutation_between(string1, string2):
         except KeyError:
             return False
     return not bool(char_appearances)
-
-

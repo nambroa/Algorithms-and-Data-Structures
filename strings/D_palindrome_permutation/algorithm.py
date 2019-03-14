@@ -21,7 +21,6 @@ QUESTIONS:
 
 """
 
-
 # A more intuitive way to look at it: return s == s[::-1]
 import itertools
 
@@ -54,9 +53,3 @@ def is_permutation_of_palindrome(string):
             else:
                 found = True
     return True
-
-
-
-
-
-

@@ -58,35 +58,6 @@ def longest_substring_without_repeating_characters(string):
     return maximum_length
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution:
     # @return an integer
     def lengthOfLongestSubstring(self, s):
@@ -101,6 +72,7 @@ class Solution:
             usedChar[s[i]] = i
 
         return maxLength
+
 
 sol = Solution()
 sol.lengthOfLongestSubstring("abba")

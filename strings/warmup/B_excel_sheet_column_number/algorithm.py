@@ -43,6 +43,6 @@ class Solution:
             return self.map_letter_to_column_number(s)
         number = 0
         for index, letter in enumerate(s[0:-1]):
-            number += pow(26, len(s) - (index+1)) * self.map_letter_to_column_number(letter)
+            number += pow(26, len(s) - (index + 1)) * self.map_letter_to_column_number(letter)
         number += self.map_letter_to_column_number(s[-1])
         return number

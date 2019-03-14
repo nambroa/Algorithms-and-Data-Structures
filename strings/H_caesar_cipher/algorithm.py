@@ -49,12 +49,12 @@ class CaesarCipher(object):
         if char not in self.alphabet():
             raise ValueError("Char not in alphabet.")
         index_of_char = ord(char) - 97  # This is because letters start at 97 in ASCII value.
-        if 25 < k+index_of_char:
+        if 25 < k + index_of_char:
             # This ridiculous line is because the alphabet has 26 letters only, so if it's bigger than 25 I need to loop
             # over it to find the correct char and not raise an IndexError.
-            index_of_new_char = (k+index_of_char) % 26
+            index_of_new_char = (k + index_of_char) % 26
         else:
-            index_of_new_char = index_of_char+k
+            index_of_new_char = index_of_char + k
         return self.alphabet()[index_of_new_char]
 
     def get_conversion_of(self, string, k):
@@ -77,5 +77,3 @@ class CaesarCipher(object):
 
 def get_caesar_cipher_of(string1, k):
     return CaesarCipher().get_conversion_of(string1, k)
-
-
