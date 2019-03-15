@@ -21,10 +21,10 @@
 def get_list_of_depths(tree_node, list_of_depths, current_depth):
     if tree_node is not None:
         list_of_depths.append(current_depth)
-        get_list_of_depths(tree_node.left, list_of_depths, current_depth+1)
+        get_list_of_depths(tree_node.left, list_of_depths, current_depth + 1)
         print("Visiting {0}".format(tree_node.val))
         print("Current Depth: {0}".format(current_depth))
-        get_list_of_depths(tree_node.right, list_of_depths, current_depth+1)
+        get_list_of_depths(tree_node.right, list_of_depths, current_depth + 1)
     return max(list_of_depths)
 
 

@@ -1,6 +1,3 @@
-# from django.core.exceptions import ValidationError
-
-
 class BinaryTreeNode(object):
     def __init__(self, data, left_child=None, right_child=None, parent=None):
         self._data = data
@@ -48,7 +45,6 @@ class BinaryTreeNode(object):
             print("Right Child of {}:".format(str(self.data()))),
             self.right_child().show()
 
-
     def __str__(self):
         return str(self.data())
 
@@ -85,5 +81,3 @@ class BinaryTree(object):
             self.post_order_traversal(node.left_child())
             self.post_order_traversal(node.right_child())
             self.visit(node)
-
-
