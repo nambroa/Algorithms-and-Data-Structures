@@ -36,10 +36,44 @@ def is_substring(string1, string2):
 
 
 def is_rotation(string1, string2):
-    if string1 is None or string2 is None: raise ValueError("Some of the strings are None.")
-    if len(string2) == 0: return len(string1) == 0
-    if len(string1) != len(string2): return False
+    if string1 is None or string2 is None:
+        raise ValueError("Some of the strings are None.")
+    if len(string2) == 0:
+        return len(string1) == 0
+    if len(string1) != len(string2):
+        return False
     string1 += string1
     if is_substring(string1, string2):
         return True
+    return False
+
+
+"""
+
+Follow up: What if you can't store the string twice? (memory constraint).
+The idea is now to see if string2 is a rotation of string1. We check the length as well.
+After that, we will iterate over possible rotations.
+
+Let's say string1: "yes" and string2: "sye"
+We can ask the following:
+A) Does "yes" start with "sye"? NO
+B) Does "yes" start with "ye"? YES --> Does "yes" ends with "s"? YES --> ROTATION!
+
+This saves you from the extra memory. But, it increases the time complexity. In every iteration, you have to do
+O(S1) where S1 = len(S1). You do this a maximum amount of S1 iterations (since S1 == len(S2)). Finally, we have
+O(S1^2) time complexity.
+
+"""
+
+
+def string_rotation_without_extra_memory(string1, string2):
+    if string1 is None or string2 is None:
+        raise ValueError("Some of the strings are None.")
+    if len(string2) == 0:
+        return len(string1) == 0
+    if len(string1) != len(string2):
+        return False
+    for index in range(len(string2)):
+        if string1.startswith(string2[:index]) and string1.endswith(string2[index:]):
+            return True
     return False
