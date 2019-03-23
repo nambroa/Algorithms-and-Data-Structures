@@ -3,7 +3,7 @@
 # input = {{1,4}, {6,8}, {2,4}, {7,9}, {10, 15}} return 11
 from unittest import TestCase
 
-from arrays.M_overlapping_intervals.algorithm import get_the_total_time_covered_by_the_intervals
+from arrays.M_total_time_covered_by_intervals.algorithm import get_the_total_time_covered_by_the_intervals
 
 
 class OverlappingIntervalsTest(TestCase):
