@@ -54,9 +54,8 @@ for two cases as it will cover all the possible cases.
 
 def maximum_absolute_difference(numbers):
     N = len(numbers)
-    sum_part = [numbers[i] + i for i in range(N)]
-    sub_part = [numbers[i] - i for i in range(N)]
+    sum_part = [numbers[i] + i for i in range(N)]  # Case 1 or 2.
+    sub_part = [numbers[i] - i for i in range(N)]  # Case 3 or 4.
     max_sum, min_sum = max(sum_part), min(sum_part)
     max_sub, min_sub = max(sub_part), min(sub_part)
     return max(max_sum - min_sum, max_sub - min_sub)
-
