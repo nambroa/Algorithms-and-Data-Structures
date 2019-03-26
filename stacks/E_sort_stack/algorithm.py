@@ -13,7 +13,7 @@ QUESTIONS YOU SHOULD ASK:
 + Will the input always be valid? Yes
 
 """
-from exercises.stacks.stack import Stack
+from stacks.stack import Stack
 
 """
 

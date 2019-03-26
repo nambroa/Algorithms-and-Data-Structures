@@ -15,7 +15,7 @@ QUESTIONS YOU SHOULD ASK:
 + Can it be zero? No
 
 """
-from exercises.stacks.stack import Stack
+from stacks.stack import Stack
 
 
 class LimitedSizeStack(object):

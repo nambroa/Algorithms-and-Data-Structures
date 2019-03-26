@@ -32,7 +32,7 @@ class ThreeStackArray(object):
         self._second_stack_current_length = 0
         self._third_stack_length = third_stack_length
         self._third_stack_current_length = 0
-        self._array = []
+        self._array = [None * first_stack_length+second_stack_length+third_stack_length]
 
     def _current_second_stack_new_element_position(self):
         second_stack_beggining_index = self._first_stack_length  # Since indexes start at 0.

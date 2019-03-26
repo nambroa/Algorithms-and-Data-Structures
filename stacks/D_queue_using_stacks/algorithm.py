@@ -10,7 +10,7 @@ QUESTIONS YOU SHOULD ASK:
 + Can I use custom classes? No, only MyQueue. The idea is to do the exercise with ONLY two normal stacks.
 
 """
-from exercises.stacks.stack import Stack
+from stacks.stack import Stack
 
 """
 
